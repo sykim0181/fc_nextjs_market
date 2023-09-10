@@ -1,9 +1,12 @@
-'use client'
-import Navbar from '@/components/Navbar'
+'use client';
+
 import './globals.css'
-import { SessionProvider } from 'next-auth/react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
+import { SessionProvider } from 'next-auth/react'
+import Navbar from '@/components/Navbar'
+import ToastProvider from '@/components/ToastProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +25,12 @@ export default function RootLayout({
       <body className={inter.className}>
         <SessionProvider>
           <Navbar />
+          <ToastProvider />
           {children}
+          <Script 
+            type="text/javascript"
+            src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=99f2b83b3b9cd67eddfe991431963ff0&libraries=services,clusterer&autoload=false`}
+          />
         </SessionProvider>
       </body>
     </html>

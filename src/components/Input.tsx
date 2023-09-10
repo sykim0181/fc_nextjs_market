@@ -26,7 +26,7 @@ const Input: React.FC<InputProps> = ({
     <div className='relative w-full'>
       {
         formatPrice && 
-          <span className='absolute text-neutral-700 top-5 left-2'>\</span>
+          <span className='absolute text-neutral-700 top-5 left-2'>￦</span>
       }
       <input 
         id={id}

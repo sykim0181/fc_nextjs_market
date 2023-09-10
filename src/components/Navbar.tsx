@@ -1,7 +1,6 @@
 'use client';
-
-import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import Link from 'next/link';
 import NavItem from './NavItem';
 
 const Navbar = () => {
