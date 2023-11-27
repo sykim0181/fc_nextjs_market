@@ -1,3 +1,5 @@
+패스트캠퍼스 Next.js 중고마켓 강의
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
